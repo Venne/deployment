@@ -1,0 +1,7 @@
+#!/bin/sh
+
+echo -e "Export database schema\n"
+php deployment/bin/export.php
+git add deployment/data/database.sql
+echo -e "Ok\n\n"
+exit 0;
